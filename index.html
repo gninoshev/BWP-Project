@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Georgi Ninoshev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+
+<div id="resume">
+    <img src="Georgi-3.jpg" alt="Georgi Ninoshev">
+    <h1>Georgi Ninoshev</h1>
+    <p>Email: <a href="mailto:georgi.ninoshev@gmail.com?subject=Mail from my website" title="e-mail">georgi.ninoshev@gmail.com</a>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/georgi-ninoshev-aa939542/" target="_blank" title="LinkedIn">georgi.ninoshev</a></p>
+    <p id="objective"> I am senior network security engineer with main focus of protecting and mitigating attacks towards network devices and Internet facing Web Application. I have broad knowledge in the networking and network security area with more than 15 years of experience.
+    <dl>
+        <dt>Experience
+        <dd>
+            <h2>Network Security Engineer<span>August 2019 – present</span></h2>
+            <p>PHOENIX group
+            <ul>
+                <li>DC routing / switching design and operation
+                <li>F5 Load Balancer and DHD SME
+                <li>CheckPoint and Palo Alto Firewall advanced operation
+                <li>FortiGate SD-WAN operation
+            </ul>
+            <h2>Network Security Engineer<span>August 2015 - July - 2019</span></h2>
+            <p>GfK
+            <ul>
+                <li>CheckPoint firewall solution design and operations
+                <li>VMWare NSX operations
+                <li>DC routing / switching design and operations
+            </ul>
+            <h2>Network Support Engineer<span>May 2011 - June 2015</span></h2>
+            <p>Hewlett-Packard Bulgaria
+            <ul>
+                <li>Support of Customer Network Environment
+                <li>Prepare and execute complex network changes
+                <li>ITIL certified
+            </ul>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Certificates
+            <dd>
+                <table>
+                    <tr>
+                        <th>CISCO</th>
+                        <th>CheckPoint</th>
+                        <th>F5 Networks</th>
+                    </tr>
+                    <tr>
+                        <td>CCNA</td>
+                        <td>CCSA</td>
+                        <td>101 ADF</td>
+                    </tr>
+                    <tr>
+                        <td>CCNP</td>
+                        <td>CCSE</td>
+                        <td>201 TMOS Admin</td>
+                    </tr>
+                </table>
+            </dd>
+    </dl>
+    <dl>
+        <dt>Hobbies
+        <dd>Mountain hiking, Diablo game fan <i class='fas fa-gamepad fa-bounce' style='font-size:24px'></i>
+    </dl>
+    <dl>
+        <dt>Current date</dt>
+        <dd>
+            <script>
+
+                const mydate = new Date();
+                let year = mydate.getYear();
+                if (year < 1000)
+                    year+=1900
+                const day = mydate.getDay();
+                const month = mydate.getMonth();
+                let daym = mydate.getDate();
+                if (daym<10)
+                    daym="0"+daym
+                const dayarray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                const montharray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+
+            </script>
+        </dd>
+    </dl>
+</div>
+</body>
+<footer>
+    <script>
+        function fakecounter(){
+            const decrease_increase = 50000;
+
+            const counterdate = new Date();
+            let currenthits = counterdate.getTime().toString();
+            currenthits=parseInt(currenthits.substring(2,currenthits.length-4))+decrease_increase
+
+            document.write("You are visitor # <b>"+currenthits+"</b> to my site!")
+        }
+        fakecounter()
+    </script>
+</footer>
+</html>
